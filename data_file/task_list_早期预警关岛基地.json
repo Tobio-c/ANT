@@ -1,0 +1,74 @@
+{
+  "startTime": "2000-01-02 09:11:25",
+  "endTime": "2000-01-02 15:11:25",
+  "frequency": 6,
+  "interval": 120,
+  "targetList": [
+    {
+      "targetId": "3a8b7527-84f1-48a0-934c-b320e4acf2c9",
+      "targetSymbol": "eb599f5d-ce55-4a3e-912f-b2cfe9780bce",
+      "targetName": "关岛基地群",
+      "targetType": "点目标",
+      "longitude": null,
+      "latitude": null,
+      "priority": 0,
+      "payloadType": "光学、SAR、电子",
+      "workMode": "聚束"
+    },
+    {
+      "targetId": "0213051d-42d4-405e-a266-34ba2135f3fc",
+      "targetSymbol": "09c84d64-ca2c-47e5-8a88-cce8dcc3ca8c",
+      "targetName": "关岛",
+      "targetType": "点目标",
+      "longitude": "144.0666667",
+      "latitude": "13.05",
+      "priority": 0,
+      "payloadType": "光学、SAR、电子",
+      "workMode": "聚束"
+    },
+    {
+      "targetId": "d5f61e35-fd4c-4912-89d2-4469715f22bc",
+      "targetSymbol": "2478e680-6bf6-4664-a6d1-0db7dc4373df",
+      "targetName": "美国海军西太平洋海上训练大队驻关岛分遣队",
+      "targetType": "点目标",
+      "longitude": null,
+      "latitude": null,
+      "priority": 0,
+      "payloadType": "光学、SAR、电子",
+      "workMode": "聚束"
+    },
+    {
+      "targetId": "f69f4c0b-4ca4-4508-b167-fb758aacede6",
+      "targetSymbol": "b54a344f-006b-49f5-89e1-3536044697a1",
+      "targetName": "安德森空军基地",
+      "targetType": "点目标",
+      "longitude": "144.9202",
+      "latitude": "13.5882",
+      "priority": 0,
+      "payloadType": "光学、SAR、电子",
+      "workMode": "聚束"
+    },
+    {
+      "targetId": "6a4e9589-71be-4bfe-947f-eaade17dfb3d",
+      "targetSymbol": "3a404b1a-c267-4862-84ae-ee8cf0d9e555",
+      "targetName": "安德森南部附属设施",
+      "targetType": "点目标",
+      "longitude": "144.9218",
+      "latitude": "13.5662",
+      "priority": 0,
+      "payloadType": "光学、SAR、电子",
+      "workMode": "聚束"
+    },
+    {
+      "targetId": "d2bba8b3-8b5e-4e85-8ca3-093c268835b3",
+      "targetSymbol": "3154abe2-840c-4ef6-9356-2bfc08c73967",
+      "targetName": "阿普拉港",
+      "targetType": "点目标",
+      "longitude": "144.653489",
+      "latitude": "13.453333",
+      "priority": 0,
+      "payloadType": "光学、SAR、电子",
+      "workMode": "聚束"
+    }
+  ]
+}

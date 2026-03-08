@@ -1,0 +1,1 @@
+python3 /mmc/app/install/APP_5/bin/app.py
