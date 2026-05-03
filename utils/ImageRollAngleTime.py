@@ -31,7 +31,8 @@ def ImageRollAngleTime(jd, dt, r, v, lla):
     # 求目标的地固坐标
     r_target = np.array(geodetic_to_ecef(lla[1] * r2d, lla[0] * r2d, 0)) / 1e3
 
-    # 优化方式：0：在经纬度上求；1：在地固坐标系中求
+    # 优化方式：0：在经纬度上求球面距离；  1：在地固坐标系中求欧氏距离  
+    ### 几何学可以证明两者在结果上一致，而欧氏距离计算更快，可作为优化方式
     method = 0
 
     # f(x1) = dikma
@@ -97,7 +98,10 @@ def ImageRollAngleTime(jd, dt, r, v, lla):
 
     image_time = (a + b) / 2
 
-    print(f'过顶时刻: {image_time}')
+
+    # print(f'过顶时刻: {image_time}')
+
+
     # roll_angle, C = cal_roll(oev, image_time, lla[1] * 180 / math.pi, lla[0] * 180 / math.pi, 0)
     # roll_angle, _ = cal_roll(oev, image_time, lla[1] * 180 / math.pi, lla[0] * 180 / math.pi, 0)
     roll_angle = LOS_YOZ_Angle(oev, jd, image_time, lla[1] * 180 / math.pi, lla[0] * 180 / math.pi, 0)

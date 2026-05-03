@@ -7,7 +7,8 @@ from utils.track_point import track_point
 def cal_time_windows(current_time, jd0, oev0, lon, lat):
     radius_earth = 6371  # 地球半径 (km)
     step = 1  # 轨道预报间隔 (s)
-    dt = 86400  # 轨道预报的总时长(s) 1天: 86400s   6h
+    # dt = 86400  # 轨道预报的总时长(s) 1天: 86400s   
+    dt = 2700  # 轨道预报的总时长(s) 1天: 86400s   
     num_i = len(lon)  # 目标点个数
     # 生成卫星星下点轨迹
     sat_lla = track_point(jd0, oev0, dt, step)  # (rad)
@@ -15,7 +16,7 @@ def cal_time_windows(current_time, jd0, oev0, lon, lat):
 
     # 存储所有目标点的时间窗口（字典）
     allTarget_time_windows = {i: [] for i in range(1, num_i+1)}
-    print(allTarget_time_windows)
+    # print(allTarget_time_windows)
 
     # 循环依此计算每个目标点i的时间窗口
     for i, key in enumerate(allTarget_time_windows):

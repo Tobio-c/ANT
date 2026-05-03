@@ -3,7 +3,6 @@ from utils.PV_J2000_OEV import PV_J2000_OEV
 from utils.read_satinfo import read_satinfo
 
 def load_satellite():
-
     # 从星务读取卫星姿轨数据
 
     ###### hex_file = "D:\SoftWare\PythonCode\gongda_mp\data_file\pose_data0703"
